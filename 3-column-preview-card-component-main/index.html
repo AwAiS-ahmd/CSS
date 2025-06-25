@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -18,9 +16,6 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | 3-column preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .cards-preview {
         display: flex;
@@ -32,9 +27,9 @@
       .card {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 155px;
-        height: 350px;
+        justify-content: space-around;
+        width: 180px;
+        height: 320px;
         padding: 50px;
         font-family: "Lexend Deca", sans-serif;
         color: hsla(0, 0%, 100%, 0.75);
@@ -43,31 +38,57 @@
         height: 50px;
         width: 50px;
       }
-     
+
       .card > p {
         font-size: 1rem;
         word-wrap: normal;
       }
-      .card:nth-child(1) {
-        background-color: hsl(31, 77%, 52%);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-      }
-      .card:nth-child(2) {
-        background-color: hsl(184, 100%, 22%);
-      }
-      .card:nth-child(3) {
-        background-color: hsl(179, 100%, 13%);
-      }
+
       .card > button {
         text-align: center;
         height: 35px;
         width: 110px;
         border-radius: 24px;
-        /* margin-top: 40px; */
         border: none;
       }
+      .sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .suvs {
+        background-color: hsl(184, 100%, 22%);
+      }
+      .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      
+      .sedans>button{
+        color: hsl(31, 77%, 52%);
+
+      }
+
+      .suvs>button{
+        color:  hsl(184, 100%, 22%);;
+  
+      }
+      
+      .luxury>button{
+        color: hsl(179, 100%, 13%);;
+      }
+
+      footer > .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      footer > .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
     </style>
+
+    <title>Frontend Mentor | 3-column preview card component</title>
   </head>
   <body>
     <article class="cards-preview">
@@ -102,11 +123,13 @@
       </section>
     </article>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/AwAiS-ahmd/CSS">Awais Ahmad</a>.
+      </div>
+    </footer>
   </body>
 </html>
