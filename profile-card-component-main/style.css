@@ -75,12 +75,12 @@
       .stats-name {
         color: hsl(227, 10%, 46%);
         font-size: small;
-        font-weight: 200;
+        font-weight: 400;
       }
       .location {
         color: hsl(227, 10%, 46%);
-        font-weight: 100;
-      }
+        font-weight: 400;
+     }
 
       .attribution {
         font-size: 11px;
